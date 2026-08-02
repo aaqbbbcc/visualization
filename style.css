@@ -1,0 +1,166 @@
+body {
+    margin: 0;
+    padding: 30px;
+    color: #222;
+    background: #f4f4f4;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+h1 {
+    margin-bottom: 8px;
+}
+
+.intro {
+    max-width: 700px;
+    color: #555;
+    line-height: 1.5;
+}
+
+.visualization {
+    margin-top: 25px;
+    padding: 25px;
+    border: 1px solid #ccc;
+    background: white;
+}
+
+.visualization h2 {
+    margin-top: 0;
+}
+
+#scene-text {
+    min-height: 45px;
+    color: #555;
+    line-height: 1.5;
+}
+
+#chart {
+    overflow-x: auto;
+}
+
+#chart svg {
+    display: block;
+    width: 100%;
+    min-width: 650px;
+    height: auto;
+}
+
+.axis-label {
+    fill: #444;
+    font-size: 12px;
+}
+
+.zero-line {
+    stroke: #777;
+    stroke-dasharray: 5 4;
+}
+
+.baseline-label {
+    fill: #666;
+    font-size: 11px;
+}
+
+.temperature-line {
+    fill: none;
+    stroke: #2f6f91;
+    stroke-width: 2.5;
+}
+
+.context-line {
+    fill: none;
+    stroke: #bbb;
+    stroke-width: 2;
+}
+
+.focus-line {
+    fill: none;
+    stroke: #d95f45;
+    stroke-width: 3;
+}
+
+.data-point {
+    fill: #d95f45;
+    opacity: 0.65;
+    cursor: pointer;
+}
+
+.data-point:hover {
+    opacity: 1;
+    stroke: #222;
+}
+
+.annotation-note-title {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.annotation-note-label {
+    font-size: 11px;
+}
+
+.explore-note {
+    margin: 5px 0 15px;
+    color: #555;
+    font-size: 14px;
+}
+
+.controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding-top: 15px;
+    border-top: 1px solid #ddd;
+}
+
+button {
+    padding: 8px 18px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    background: white;
+    cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+    background: #eee;
+}
+
+button:disabled {
+    cursor: not-allowed;
+    opacity: 0.4;
+}
+
+.tooltip {
+    position: absolute;
+    display: none;
+    padding: 8px 10px;
+    border-radius: 4px;
+    color: white;
+    background: rgba(0, 0, 0, 0.8);
+    pointer-events: none;
+    font-size: 13px;
+}
+
+.error {
+    color: #b00020;
+}
+
+footer {
+    margin-top: 18px;
+    color: #666;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .visualization {
+        padding: 15px;
+    }
+}
